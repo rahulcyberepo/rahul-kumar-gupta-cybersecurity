@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rahul Kumar Gupta cybersecurity portfolio showcasing penetration testing, cybersecurity analysis, practical labs, web security, research and hands-on security projects.">
+  <meta name="author" content="Rahul Kumar Gupta">
+  <meta name="theme-color" content="#070a08">
+  <title>Rahul Kumar Gupta | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark">RG</span>
+      <span>Rahul Gupta</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#learning">Learning</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#roles">Focus Areas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Cybersecurity · VAPT · Web Security</p>
+          <h1>Rahul Kumar Gupta</h1>
+          <p class="hero-role">Penetration Tester · Cybersecurity Analyst</p>
+          <p class="hero-text">
+            I learn security by understanding how systems work, testing them safely in labs,
+            documenting the evidence and learning how the weakness should be fixed.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="https://github.com/rahulcyberepo" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/rahul-kumar-gupta-cyber-security-analyst" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://tryhackme.com/p/rahulcyberlabs" target="_blank" rel="noreferrer">TryHackMe</a>
+          </div>
+
+          <div class="proof-row">
+            <div><strong>50+</strong><span>Hands-on security labs</span></div>
+            <div><strong>3</strong><span>Completed certifications</span></div>
+            <div><strong>1</strong><span>Certification in progress</span></div>
+          </div>
+        </div>
+        <div class="hero-terminal reveal" aria-label="Portfolio focus">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <small>rahul@portfolio:~</small>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="terminal-output">Rahul Kumar Gupta</p>
+
+            <p><span class="prompt">$</span> focus</p>
+            <p class="terminal-output">Penetration Testing<br>Cybersecurity Analysis<br>Web Security<br>Security Research</p>
+
+            <p><span class="prompt">$</span> philosophy</p>
+            <p class="terminal-output">learn → test → document → improve</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-label">01 / About</div>
+      <div class="split">
+        <h2>I’m building depth, not a tool list.</h2>
+        <div class="copy">
+          <p>
+            I’m building my cybersecurity portfolio around penetration testing, security analysis, VAPT and application security.
+            My earlier work around websites, analytics, troubleshooting and communicating findings gave me useful transferable habits,
+            but I treat security as a new technical discipline that must be proven through hands-on work.
+          </p>
+          <p>
+            Right now I’m strengthening networking, Linux, Windows, web security, Active Directory,
+            Python automation and professional security reporting.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <div class="section-label">02 / Projects</div>
+        <h2>Selected security builds.</h2>
+        <p>
+          I’m keeping this public portfolio focused. Planned work stays clearly labelled until
+          I have the evidence to show it properly.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span>01</span>
+            <span class="status-pill building">Building</span>
+          </div>
+          <h3>Cybersecurity Home Lab + Network Discovery</h3>
+          <p>Build an isolated Kali, Ubuntu and Windows lab to understand host discovery, ARP, ports, services and traffic.</p>
+          <div class="stack">Nmap · Wireshark · Linux · Windows · TCP/IP</div>
+          <button class="project-detail" data-project="lab">View scope →</button>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span>02</span>
+            <span class="status-pill">Planned</span>
+          </div>
+          <h3>Linux Security + Hardening</h3>
+          <p>Assess a Linux host, identify weak permissions and exposed services, harden it and retest the changes.</p>
+          <div class="stack">Ubuntu · SSH · Permissions · Firewall · Bash</div>
+          <button class="project-detail" data-project="linux">View scope →</button>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span>03</span>
+            <span class="status-pill">Planned</span>
+          </div>
+          <h3>Network Traffic Investigation</h3>
+          <p>Analyze packet captures to reconstruct DNS, TCP and HTTP activity and produce a short investigation report.</p>
+          <div class="stack">Wireshark · PCAP · DNS · TCP · HTTP</div>
+          <button class="project-detail" data-project="pcap">View scope →</button>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span>04</span>
+            <span class="status-pill">Planned</span>
+          </div>
+          <h3>Vulnerability Assessment + Manual Validation</h3>
+          <p>Compare scanner findings with manual checks to separate real vulnerabilities, false positives and misconfigurations.</p>
+          <div class="stack">Nmap · Nessus · Nikto · Reporting</div>
+          <button class="project-detail" data-project="va">View scope →</button>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span>05</span>
+            <span class="status-pill">Planned</span>
+          </div>
+          <h3>Web Application VAPT</h3>
+          <p>Test a deliberately vulnerable web app with focus on root cause, impact, remediation and retest.</p>
+          <div class="stack">Burp Suite · HTTP · Auth · Access Control · OWASP</div>
+          <button class="project-detail" data-project="web">View scope →</button>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span>06</span>
+            <span class="status-pill">Planned</span>
+          </div>
+          <h3>VAPT Workflow Automation</h3>
+          <p>Build a small Python utility for a real assessment workflow such as parsing Nmap XML or organizing evidence.</p>
+          <div class="stack">Python · XML · JSON · CSV · Git</div>
+          <button class="project-detail" data-project="automation">View scope →</button>
+        </article>
+      </div>
+
+      <div class="roadmap-note">
+        <strong>Later roadmap:</strong>
+        API security, Active Directory, detection, cloud, DevSecOps, AI security and an enterprise capstone.
+      </div>
+    </section>
+
+    <section class="section" id="learning">
+      <div class="section-label">03 / Practical Learning</div>
+      <div class="learning-grid">
+        <div class="learning-card reveal">
+          <p class="big-number">50+</p>
+          <h2>TryHackMe hands-on labs</h2>
+          <p>
+            Labs are where I practice individual techniques. Projects are where I combine them into larger investigations.
+          </p>
+          <a class="btn" href="https://tryhackme.com/p/rahulcyberepo" target="_blank" rel="noreferrer">Open TryHackMe Profile</a>
+        </div>
+
+        <div class="topics reveal">
+          <span>Networking</span>
+          <span>Linux</span>
+          <span>Windows</span>
+          <span>Nmap & Enumeration</span>
+          <span>Web Security</span>
+          <span>OWASP Concepts</span>
+          <span>Privilege Escalation</span>
+          <span>Active Directory</span>
+          <span>Pentesting Methodology</span>
+          <span>Defensive Fundamentals</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="section-heading compact">
+        <div class="section-label">04 / Certifications</div>
+        <h2>Structured learning, supporting the practical work.</h2>
+      </div>
+
+      <div class="cert-list">
+        <article class="cert-row reveal">
+          <div>
+            <span class="cert-status">Completed</span>
+            <h3>Google Cybersecurity Professional Certificate</h3>
+          </div>
+          <p>Security fundamentals, Linux, SQL, networking, incident concepts, risk and Python foundations.</p>
+        </article>
+
+        <article class="cert-row reveal">
+          <div>
+            <span class="cert-status">Completed</span>
+            <h3>Junior Penetration Tester (PT1)</h3>
+          </div>
+          <p>Reconnaissance, enumeration, web and network testing, Active Directory, exploitation workflow and reporting.</p>
+        </article>
+
+        <article class="cert-row reveal">
+          <div>
+            <span class="cert-status">Completed</span>
+            <h3>Web Application Pentester Level 1 (WEB1)</h3>
+          </div>
+          <p>HTTP, authentication, authorization, access control, manual validation and remediation thinking.</p>
+        </article>
+
+        <article class="cert-row reveal">
+          <div>
+            <span class="cert-status progress">In progress</span>
+            <h3>CompTIA Security+</h3>
+          </div>
+          <p>Currently preparing. Not presented as completed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section workflow">
+      <div class="section-label">05 / Working Method</div>
+      <div class="workflow-line reveal">
+        <span>Learn</span><i>→</i>
+        <span>Research</span><i>→</i>
+        <span>Build</span><i>→</i>
+        <span>Test</span><i>→</i>
+        <span>Document</span><i>→</i>
+        <span>Fix</span><i>→</i>
+        <span>Retest</span>
+      </div>
+    </section>
+
+    <section class="section" id="roles">
+      <div class="section-label">06 / Focus Areas</div>
+      <div class="roles-layout">
+        <div>
+          <h2>What this portfolio is built to show.</h2>
+          <p>
+            Not a job application page. This is a living showcase of the security skills,
+            projects, labs and research I am building over time.
+          </p>
+        </div>
+
+        <div class="role-list">
+          <span>Penetration Testing</span>
+          <span>Cybersecurity Analysis</span>
+          <span>VAPT</span>
+          <span>Web Security</span>
+          <span>Network Security</span>
+          <span>Security Research</span>
+          <span>Python Automation</span>
+          <span>Technical Reporting</span>
+        </div>
+      </div>
+
+      <div class="contact-panel reveal">
+        <div>
+          <p class="eyebrow">Explore more</p>
+          <h3>See the labs, repositories and security work behind the portfolio.</h3>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/rahulcyberepo" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://tryhackme.com/p/rahulcyberlabs" target="_blank" rel="noreferrer">TryHackMe</a>
+          <a class="btn" href="https://www.linkedin.com/in/rahul-kumar-gupta-cyber-security-analyst" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cloud-break" aria-label="Animated cyber cloud">
+      <div class="cloud-shell">
+        <div class="cloud-puff puff-one"></div>
+        <div class="cloud-puff puff-two"></div>
+        <div class="cloud-puff puff-three"></div>
+        <div class="cloud-base">
+          <span class="eye eye-left"></span>
+          <span class="eye eye-right"></span>
+          <span class="cloud-mouth"></span>
+        </div>
+        <span class="spark spark-one">✦</span>
+        <span class="spark spark-two">✦</span>
+      </div>
+      <p>safe mode <span>↔</span> chaos mode</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Rahul Kumar Gupta</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <dialog class="project-modal" id="projectModal">
+    <button class="close-modal" id="modalClose" aria-label="Close">×</button>
+    <p class="eyebrow">Project scope</p>
+    <h2 id="modalTitle"></h2>
+    <p id="modalSummary"></p>
+
+    <div class="modal-grid">
+      <div>
+        <span>Objective</span>
+        <p id="modalObjective"></p>
+      </div>
+      <div>
+        <span>Evidence planned</span>
+        <p id="modalEvidence"></p>
+      </div>
+      <div>
+        <span>Skills developed</span>
+        <p id="modalSkills"></p>
+      </div>
+      <div>
+        <span>Real-world relevance</span>
+        <p id="modalRelevance"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
